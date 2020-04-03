@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 90%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.flex > div {
+    flex: 1;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+header {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+nav {
+    justify-content: space-between;
+    margin-bottom: 80px;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    color: hsl(243, 87%, 12%)
+}
+
+input {
+    border: 1px solid hsl(243, 87%, 12%);
+    padding: 12px;
+    border-radius: 3px;
+    width: 250px;
+    margin-right: 10px;
+}
+
+.logo {
+    width: 135px;
+}
+
+.btn {
+    font-family: 'Raleway', sans-serif;
+    background-color: hsl(224, 93%, 58%);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 13px;
+    width: 180px;
+}
+
+.light-grayish-blue {
+    background-color: hsl(240, 75%, 98%);
+    margin-top: 200px;
+    padding: 40px 0 70px;
+    position: relative;
+}
+
+.light-grayish-blue .flex div:first-child {
+    margin-right: 40px;
+}
+
+.light-grayish-blue h2 {
+    font-size: 1.9em;
+}
+
+.light-grayish-blue::before {
+    content: '';
+    background-image: url(./images/bg-curve-desktop.svg);
+    position: absolute;
+    top: -55px;
+    left: 0;
+    width: 100%;
+    height: 55px;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+}
+
+.arrow-link {
+    color: hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
+    padding-bottom: 3px;
+}
+
+.arrow-link img {
+    margin-bottom: -3px;
+}
+
+.desaturated-blue {
+    background-color: hsl(238, 22%, 44%);
+    color: white;
+    padding: 35px 0;
+}
+
+.desaturated-blue .container .flex {
+    justify-content: space-between;
+}
+
+.desaturated-blue .container .flex div:first-child {
+    flex: 0.4;
+}
+
+.desaturated-blue .container .flex div:nth-child(2) {
+    flex: 0.4;
+    margin-right: 40px;
+}
+
+.desaturated-blue .container .flex div:nth-child(2) button {
+    display: block;
+}
+
+.desaturated-blue .container .flex input {
+    width: 450px;
+    margin-bottom: 10px;
+}
+
+.testimonial-box {
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    width: 53%;
+    padding: 30px;
+    margin-top: 50px;
+    font-size: 0.8em;
+}
+
+.testimonial-box p {
+    line-height: 1.8;
+}
+
+.user-info img {
+    width: 13%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.user-info small{
+    font-size: 0.7em;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    padding: 60px 0 20px;
+    color: white;
+    font-size: 0.8em;
+} 
+
+footer img {
+    margin-right: 15px;
+}
+
+footer .container .logo {
+    margin-bottom: 20px;
+}
+
+footer ul {
+    color: white
+}
+
+footer ul a {
+    color: white;
+}
+
+footer ul li {
+    margin-bottom: 15px;
+}
+
+.flex-start {
+    align-items: flex-start;
+}
+
+footer .social-links {
+    display: flex;
+    align-items: center;
+}
+
+footer .social-links li a {
+    border-radius: 50%;
+    border: 1px solid white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+}
+
+footer .social-links li a i {
+    margin-bottom: -3px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    header {
+        margin-top: 10px;
+    }
+
+    nav .logo {
+        width: 100px;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.flex {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    nav.flex .flex {
+        flex-direction: row;
+    }
+
+    header form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header form input {
+        margin: 20px auto;
+        width: 80%;
+    }
+
+    header form button{
+        margin: 0 auto;
+        width: 80% !important;
+    }
+
+    .flex-reverse {
+        flex-direction: column-reverse;
+    }
+
+    .light-grayish-blue::before {
+        content: '';
+        background-image: url(./images/bg-curve-mobile.svg);
+        position: absolute;
+        top: -55px;
+        left: 0;
+        width: 100%;
+        height: 55px;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-size: cover;
+    }
+
+    .light-grayish-blue .container div:first-child.flex {
+        flex-direction: column-reverse;
+    }
+
+    .light-grayish-blue h2 {
+        font-size: 1.3em;
+    }
+
+    .light-grayish-blue p {
+        color: hsl(238, 22%, 44%);
+        text-align: left;
+    }
+
+    .light-grayish-blue .flex div:first-child {
+        margin-right: 0px;
+    }
+
+    .testimonial-box {
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        width: 80%;
+        padding: 30px;
+        margin-top: 50px;
+        font-size: 0.8em;
+        text-align: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .user-info {
+        flex-direction: row;
+    }
+
+    .desaturated-blue {
+        padding: 20px 20px 60px 20px;
+    }
+
+    .desaturated-blue .container .flex input {
+        width: 80%;
+        margin-bottom: 10px;
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    .desaturated-blue .container .flex button {
+        width: 80%;
+        margin-bottom: 10px;
+        margin: 0 auto;
+    }
+
+    .desaturated-blue .container .flex div:nth-child(2) {
+        margin-right: 0px;
+        width: 100%;
+    }
+}
